@@ -62,3 +62,18 @@ Once the repo is cloned:
 - **Context API** – state management.
 
 ---
+
+## CI/CD Setup
+
+The app has GitHub Actions to:
+- Run linting and tests on every push.
+- Build Android/iOS automatically on the `main` branch.
+
+### How CI/CD Works
+
+1. **On Push to `main` or `develop` branches:**
+   - Runs linting and unit tests.
+   - Builds Android/iOS versions.
+
+2. **On Pull Request:**
+   - Validates code quality and tests.
